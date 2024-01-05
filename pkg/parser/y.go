@@ -4,10 +4,6 @@ package parser
 
 import __yyfmt__ "fmt"
 
-import (
-//"fmt"
-)
-
 func addStatement(yylex yyLexer, stmt Statement) {
 	yylex.(*lex).Query.Statements = append(yylex.(*lex).Query.Statements, stmt)
 }
